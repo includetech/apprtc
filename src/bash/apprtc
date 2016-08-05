@@ -26,4 +26,4 @@ fi
 DESC="APPRTC SERVER"
 NAME=apprtc
 DAEMON='/root/live/google_appengine/dev_appserver.py'
-DAEMON_ARGS='/root/live/apprtc/out/app_engine --host 999.999.999.999'
+DAEMON_ARGS='/root/live/apprtc/out/app_engine --host 999.999.999.999 --skip_sdk_update_check'
