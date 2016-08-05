@@ -12,17 +12,15 @@ MEMCACHE_RETRY_LIMIT = 100
 LOOPBACK_CLIENT_ID = 'LOOPBACK_CLIENT_ID'
 
 # TODO: Remove once clients support ICE_SERVER.
-TURN_BASE_URL = 'https://computeengineondemand.appspot.com'
+TURN_BASE_URL = 'http://999.999.999.999'
 TURN_URL_TEMPLATE = '%s/turn?username=%s&key=%s'
 CEOD_KEY = '4080218913'
 
 ICE_SERVER_BASE_URL = 'https://networktraversal.googleapis.com'
 ICE_SERVER_URL_TEMPLATE = '%s/v1alpha/iceconfig?key=%s'
-ICE_SERVER_API_KEY = os.environ.get('ICE_SERVER_API_KEY')
-
-CALLSTATS_PARAMS = {
-  'appId': os.environ.get('CALLSTATS_APP_ID'),
-  'appSecret': os.environ.get('CALLSTATS_APP_SECRET')
+ICE_SERVER_API_KEY = os.environ.get('ICE_SERVER_API<SERVER>ALLSTATS_PARAMS = {
+  'appId': os.envir<SERVER>ALLSTATS_APP_ID'),
+  'appSecret': os.envir<SERVER>ALLSTATS_APP_SECRET')
 }
 
 # Dictionary keys in the collider instance info constant.
@@ -30,13 +28,9 @@ WSS_INSTANCE_HOST_KEY = 'host_port_pair'
 WSS_INSTANCE_NAME_KEY = 'vm_name'
 WSS_INSTANCE_ZONE_KEY = 'zone'
 WSS_INSTANCES = [{
-    WSS_INSTANCE_HOST_KEY: 'apprtc-ws.webrtc.org:443',
+    WSS_INSTANCE_HOST_KEY: '999.999.999.999:8089',
     WSS_INSTANCE_NAME_KEY: 'wsserver-std',
     WSS_INSTANCE_ZONE_KEY: 'us-central1-a'
-}, {
-    WSS_INSTANCE_HOST_KEY: 'apprtc-ws-2.webrtc.org:443',
-    WSS_INSTANCE_NAME_KEY: 'wsserver-std-2',
-    WSS_INSTANCE_ZONE_KEY: 'us-central1-f'
 }]
 
 WSS_HOST_PORT_PAIRS = [ins[WSS_INSTANCE_HOST_KEY] for ins in WSS_INSTANCES]
