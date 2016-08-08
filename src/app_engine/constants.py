@@ -1,5 +1,3 @@
-# Copyright 2015 Google Inc. All Rights Reserved.
-
 """AppRTC Constants.
 
 This module contains the constants used in AppRTC Python modules.
@@ -18,9 +16,11 @@ CEOD_KEY = '4080218913'
 
 ICE_SERVER_BASE_URL = 'https://networktraversal.googleapis.com'
 ICE_SERVER_URL_TEMPLATE = '%s/v1alpha/iceconfig?key=%s'
-ICE_SERVER_API_KEY = os.environ.get('ICE_SERVER_API<SERVER>ALLSTATS_PARAMS = {
-  'appId': os.envir<SERVER>ALLSTATS_APP_ID'),
-  'appSecret': os.envir<SERVER>ALLSTATS_APP_SECRET')
+ICE_SERVER_API_KEY = os.environ.get('ICE_SERVER_API_KEY')
+
+CALLSTATS_PARAMS = {
+  'appId': os.environ.get('CALLSTATS_APP_ID'),
+  'appSecret': os.environ.get('CALLSTATS_APP_SECRET')
 }
 
 # Dictionary keys in the collider instance info constant.
@@ -42,7 +42,6 @@ WSS_HOST_ACTIVE_HOST_KEY = 'wss_host_active_host'
 WSS_HOST_IS_UP_KEY = 'is_up'
 WSS_HOST_STATUS_CODE_KEY = 'status_code'
 WSS_HOST_ERROR_MESSAGE_KEY = 'error_message'
-
 RESPONSE_ERROR = 'ERROR'
 RESPONSE_ROOM_FULL = 'FULL'
 RESPONSE_UNKNOWN_ROOM = 'UNKNOWN_ROOM'
