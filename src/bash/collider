@@ -25,5 +25,5 @@ fi
 
 DESC="APPRTC COLLIDER"
 NAME=collider
-DAEMON='/root/live/workspace/bin/collidermain'
+DAEMON='/home/ubuntu/live/workspace/bin/collidermain'
 DAEMON_ARGS='-port=8089 -tls=false -room-server=http://999.999.999.999:8080'
